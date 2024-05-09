@@ -17,7 +17,7 @@ contract ERC20 {
         name="xdron's games";
         symbol="GMG7";
         decimals=18; 
-        anounc = "  id - 1. Batton  2.Grenade  3.Rocket Launcher" ;
+
     }
 
 	event Transfer(address indexed from, address indexed to, uint value);
@@ -60,16 +60,7 @@ contract ERC20 {
         emit Transfer(msg.sender, address(0), amount);
     }
 
-    function purchase(uint id) external returns(string memory,uint){
-
-        burn(id*500);
-        if (id<4 && id>0)
-        {
-            return("you have purchased weapon with id:" , id);
-        }
-        
-        
-    }
+    
 }
 
 interface IERC20 {
