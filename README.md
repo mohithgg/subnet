@@ -30,7 +30,7 @@ avalanche subnet create mySubnet
 
 * ChainId: 6969
 
-* Token symbol: MOMO
+* Token symbol: GMG
 
 
 Then we deploy :
